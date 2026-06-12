@@ -1,0 +1,15 @@
+[project]
+name = "hermes-captcha-solver"
+version = "0.1.0"
+description = "Hermes Agent 验证码自动求解器 — OCR + AI 视觉（零外部协议依赖）"
+requires-python = ">=3.9"
+dependencies = [
+    "ddddocr>=1.2.0",
+]
+
+[project.scripts]
+hermes-captcha-solver = "hermes_captcha.server:main"
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
